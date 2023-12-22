@@ -1,3 +1,31 @@
+/* Fonts */
+@font-face {
+  font-family: 'Rubik';
+  src: url('../fonts/Rubik-Regular.woff2') format('woff2'),
+  url('../fonts/Rubik-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../fonts/Rubik-Medium.woff2') format('woff2'),
+  url('../fonts/Rubik-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+:root {
+  --accent-color: #5267DF;
+  --bg-red: #FA5959;
+  --text-color-dark: #242A45;
+  --text-color-light: rgba(36, 42, 69, 0.5);
+}
+
 /* GLOBAL */
 html {
   box-sizing: border-box;
@@ -17,11 +45,11 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: "Rubik", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
   background-color: #fff;
-  color: #222;
+  color: var(--text-color-light);
 }
 
 img {
@@ -72,9 +100,9 @@ select:-webkit-autofill:focus {
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1144px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
