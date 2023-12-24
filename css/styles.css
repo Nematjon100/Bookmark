@@ -50,6 +50,8 @@ body {
   line-height: 28px;
   background-color: #fff;
   color: var(--text-color-light);
+  font-weight: 400;
+  overflow: hidden;
 }
 
 img {
@@ -107,11 +109,161 @@ select:-webkit-autofill:focus {
   margin-right: auto;
 }
 
+/* BUTTONS */
+.button {
+  display: inline-block;
+  padding: 8px 22px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  white-space: nowrap;
+}
+
+.button--red {
+  background-color: var(--bg-red);
+}
+
+.button--blue {
+  background-color: var(--accent-color);
+}
+
+.button--grey {
+  background-color: #f7f7f7;
+}
+
+.button--big {
+  padding: 10px 35px;
+}
+
+.button--medium {
+  padding: 12px 32px;
+}
+
+.button--small {
+  padding: 8px 22px;
+}
+
 
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
 }
+
+
+/* Header */
+.header {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  margin-bottom: 76px;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+}
+
+.logo__link {
+  display: flex;
+  margin-right: auto;
+  text-decoration: none;
+}
+
+.logo {
+  display: block;
+  width: 150px;
+  height: 25px;
+  object-fit: contain;
+}
+
+
+.sitenav__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-right: 48px;
+  list-style: none;
+}
+
+.sitenav__item:not(:last-child) {
+  margin-right: 44px;
+}
+
+.sitenav__link {
+  font-size: 13px;
+  line-height: 17px;
+  letter-spacing: 1.5px;
+  color: var(--text-color-dark);
+  text-decoration: none;
+}
+
+.header__button {
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  line-height: 17px;
+  text-transform: uppercase;
+  padding: 10px 30px;
+}
+
+
+/* HERO */
+.hero {
+  padding-top: 60px;
+  padding-bottom: 123px;
+  margin-top: -80px;
+  background-image: url('../img/blue-ellips-img.png');
+  background-repeat: no-repeat;
+  background-position:  calc(51% + 700px) 210px;
+}
+
+.hero__container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.hero__info {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 540px;
+  padding-top: 85px;
+  margin-right: 25px;
+}
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 52px;
+  letter-spacing: -0.15px;
+  color: var(--text-color-dark);
+}
+
+.hero__text {
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.buttons__wrapper {
+  display: flex;
+}
+
+.hero--button {
+  margin-left: 16px;
+  color: var(--text-color-dark);
+}
+
+.hero__img {
+  flex-shrink: 0;
+  object-fit: contain;
+
+}
+
+
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -120,5 +272,9 @@ only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
+
+  .hero {
+    background-image: url('../img/blue-ellips-img@2x.png');
+}
 
 }
